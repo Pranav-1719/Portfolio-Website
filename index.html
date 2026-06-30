@@ -41,7 +41,9 @@
       </ul>
       <div class="navbar-actions">
         <a href="#contact" class="btn-primary">Contact</a>
-        <a href="./assets/Resume.pdf" download class="btn-outline">Resume ↓</a>
+        <a href="./assets/Pranav_CV.pdf" download class="btn-outline"
+          >Resume ↓</a
+        >
       </div>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -1000,19 +1002,19 @@
       };
 
       Object.entries(links).forEach(([id, url]) => {
-  const el = document.getElementById(id);
+        const el = document.getElementById(id);
 
-  if (el) {
-    el.style.cursor = "pointer";
+        if (el) {
+          el.style.cursor = "pointer";
 
-    el.addEventListener("click", (e) => {
-      // Don't trigger if the user clicked an existing link
-      if (e.target.closest("a")) return;
+          el.addEventListener("click", (e) => {
+            // Don't trigger if the user clicked an existing link
+            if (e.target.closest("a")) return;
 
-      window.open(url, "_blank");
-    });
-  }
-});
+            window.open(url, "_blank");
+          });
+        }
+      });
 
       /* ── Contact button ───────────────────────── */
       document
